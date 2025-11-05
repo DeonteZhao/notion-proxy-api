@@ -68,7 +68,7 @@ try {
 const upstream = await fetch(notionUrl, {
 method: 'POST',
 headers: {
-'Authorization': Bearer ${NOTION_TOKEN} ,
+'Authorization': Bearer ${NOTION_TOKEN},
 'Notion-Version': NOTION_VERSION,
 'Content-Type': 'application/json'
 },
