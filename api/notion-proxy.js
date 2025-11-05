@@ -90,7 +90,7 @@ try {
 // 7) 错误兜底（仍带 CORS 头）
 res.status(500);
 res.setHeader('Content-Type', 'text/plain; charset=utf-8');
-return res.send( Proxy error: ${(err && err.message) || String(err)} );
+return res.send( Proxy error: ${(err && err.message) || String(err)} )
 }
 }
 }
