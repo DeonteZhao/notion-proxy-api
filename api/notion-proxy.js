@@ -58,7 +58,7 @@ return res.status(500).send('Server misconfigured: NOTION_TOKEN is missing');
 }
 
 // 6) 转发到 Notion
-const notionUrl = "https://api.notion.com/v1/databases/${databaseId}/query" ;
+const notionUrl = https://api.notion.com/v1/databases/${databaseId}/query;
 const upstreamBody = {
 ...(Array.isArray(sorts) ? { sorts } : {}),
 ...(filter ? { filter } : {})
@@ -91,6 +91,4 @@ try {
 res.status(500);
 res.setHeader('Content-Type', 'text/plain; charset=utf-8');
 return res.send( Proxy error: ${(err && err.message) || String(err)} )
-}
-}
 }
