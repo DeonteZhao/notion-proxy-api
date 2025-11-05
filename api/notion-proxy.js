@@ -7,7 +7,7 @@
 - - 从环境变量读取 NOTION_TOKEN、NOTION_VERSION
 - - 将前端传来的 databaseId、sorts、filter 转发到 Notion /v1/databases/{id}/query
     */
-export default async function handler(req, res) {
+module.exports = async (req, res) => {
 // 1) 统一设置 CORS 响应头（所有返回路径都要有）
 res.setHeader('Access-Control-Allow-Origin', '*');
 res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
