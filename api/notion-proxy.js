@@ -58,7 +58,7 @@ return res.status(500).send('Server misconfigured: NOTION_TOKEN is missing');
 }
 
 // 6) 转发到 Notion
-const notionUrl = https://api.notion.com/v1/databases/${databaseId}/query ;
+const notionUrl = "https://api.notion.com/v1/databases/${databaseId}/query" ;
 const upstreamBody = {
 ...(Array.isArray(sorts) ? { sorts } : {}),
 ...(filter ? { filter } : {})
